@@ -1,9 +1,41 @@
+
+
+.cinzel{
+  font-family: 'Cinzel Decorative', cursive;
+letter-spacing: 7px;
+                                                
+}
+.big{
+  font-family: 'Big Shoulders Stencil Display', cursive;
+letter-spacing: 7px;
+
+}
+.dm{
+font-family: 'DM Serif Display', serif;
+letter-spacing: 7px;
+
+}
+.dm_italic{
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  letter-spacing: 7px;
+}
+.vibes{
+  font-family: 'Vibes', cursive;
+  letter-spacing: 7px;
+
+}
+.petemoss{
+  font-family: 'Petemoss', cursive;
+  letter-spacing: 4px;
+
+}
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 9rem;
   min-height: 100vh;
 }
 
@@ -39,20 +71,23 @@
   font-family: var(--font-mono);
 }
 
-.grid {
+/* .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(2, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+
+} */
+.card2{
+  border-radius: 12px;
+  transition:  200ms, border 200ms;
+ box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
+/* .card2:hover{
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+} */
 
 .card span {
   display: inline-block;
@@ -67,9 +102,7 @@
 .card p {
   margin: 0;
   opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+  font-size: 2rem;
 }
 
 .center {
@@ -152,7 +185,6 @@
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -161,7 +193,6 @@
   .card:hover span {
     transform: translateX(4px);
   }
-}
 
 @media (prefers-reduced-motion) {
   .thirteen::before {
@@ -187,7 +218,7 @@
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: 20px ;
   }
 
   .card h2 {
